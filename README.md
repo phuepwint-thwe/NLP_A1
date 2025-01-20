@@ -63,6 +63,7 @@ To run the app:
 2. Run the application:
    ```bash
    python app.py
-   Access the app in your browser at:
+
 http://localhost:8501/
+
 ---
