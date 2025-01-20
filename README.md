@@ -1,5 +1,13 @@
 # nlp-a1
 - [Student Information](#student-information)
+- [Training Data](#training-data)
+- [Model Comparison](#model-comparison)
+- [Observations](#observations)
+- [Similarity Scores](#similarity-scores)
+- [Installation Steps](#installation-steps)
+- [Report: Search Results Using Different Models](#report-search-results-using-different-models)
+- [Conclusion](#conclusion)
+
 ## Student Information
  - Name: Phue Pwint Thwe
  - ID: st124784
