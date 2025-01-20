@@ -49,12 +49,6 @@
 
 ---
 
-## Conclusion
-
-Among the four models evaluated, **GloVe (Gensim)** emerged as the most effective, demonstrating strong performance in syntactic and semantic accuracy. Its success highlights the value of pretraining on large datasets, which enables it to capture more meaningful word relationships. In contrast, the models trained from scratch—Skipgram, Skipgram (NEG), and GloVe—struggled to achieve high accuracy due to the limited corpus size and vocabulary, despite consistent training parameters. This underscores the need for larger datasets and extended training to improve results. Overall, **GloVe (Gensim)** is well-suited for practical applications, while future efforts could focus on fine-tuning pretrained models or optimizing the training process for models built from scratch.
-
----
-
 ## Installation Steps
 
 To run the app:
@@ -104,5 +98,9 @@ The **GloVe (Gensim)** model, being a pretrained model, generated the most conte
 - **GloVe** showed slight improvement but struggled with grammatical and contextual accuracy.
 - **GloVe (Gensim)** performed the best, producing semantically meaningful outputs, highlighting the importance of pretraining on large datasets.
 
-**Conclusion**: Pretrained models like **GloVe (Gensim)** are more effective for tasks requiring semantic understanding, while models trained from scratch require larger datasets and extended training for improved performance.
+## Conclusion
+
+Pretrained models like **GloVe (Gensim)** are more effective for tasks requiring semantic understanding, while models trained from scratch require larger datasets and extended training for improved performance.
+
+
 ---
