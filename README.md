@@ -18,9 +18,9 @@
 
 | **Model**            | **Window Size** | **Training Loss** | **Training Time** | **Syntactic Accuracy** | **Semantic Accuracy** |
 |-----------------------|-----------------|-------------------|-------------------|-------------------------|------------------------|
-| Skipgram             | 2               | 9.65              | -     | 0.00%                  | 0.00%                 |
-| Skipgram (NEG)       | 2               | 1.93              | -    | 0.00%                  | 0.00%                 |
-| GloVe                | 2               | 0.00              |       | 0.00%                  | 0.00%                 |
+| Skipgram             | 2               | 9.65              | 7 min 4 sec     | 0.00%                  | 0.00%                 |
+| Skipgram (NEG)       | 2               | 1.93              | 11 min 15 sec    | 0.00%                  | 0.00%                 |
+| GloVe                | 2               | 0.00              |   1 min 57 sec    | 0.00%                  | 0.00%                 |
 | GloVe (Gensim)       | -               | -                 | -                 | 55%               | 54%                |
 
 ### Observations
@@ -38,10 +38,9 @@
 ---
 
 ## Similarity Scores
-
-| **Model**            | **Skipgram** | **Skipgram (NEG)** | **GloVe** | **GloVe (Gensim)** | 
-|-----------------------|--------------|--------------------|-----------|--------------------|------------|
-| **Spearman Correlation** | 0.85        | 1.93              | 0.26      | -0.01            | 
+| **Model**            | **Skipgram** | **Skipgram (NEG)** | **GloVe** | **GloVe (Gensim)** |
+|-----------------------|--------------|--------------------|-----------|--------------------|
+| **Spearman Correlation** | 0.85        | 1.93              | 0.26      | -0.01             |
 
 ### Observations
 1. **Skipgram (NEG)** achieved the highest Spearman correlation of **1.93**, which may indicate a high level of similarity between the embeddings and the human-judged dataset. However, this unusually high value could suggest overfitting or data-specific bias.
@@ -52,5 +51,18 @@
 
 ## Conclusion
 
-Among the four models evaluated, **GloVe (Gensim)** emerged as the most effective, demonstrating strong performance in syntactic and semantic accuracy. Its success highlights the value of pretraining on large datasets, which enables it to capture more meaningful word relationships. In contrast, the models trained from scratch—Skipgram, Skipgram (NEG), and GloVe—struggled to achieve high accuracy due to the limited corpus size and vocabulary, despite consistent training parameters. This underscores the need for larger datasets and extended training to improve results. Overall, GloVe (Gensim) is well-suited for practical applications, while future efforts could focus on fine-tuning pretrained models or optimizing the training process for models built from scratch.
+Among the four models evaluated, **GloVe (Gensim)** emerged as the most effective, demonstrating strong performance in syntactic and semantic accuracy. Its success highlights the value of pretraining on large datasets, which enables it to capture more meaningful word relationships. In contrast, the models trained from scratch—Skipgram, Skipgram (NEG), and GloVe—struggled to achieve high accuracy due to the limited corpus size and vocabulary, despite consistent training parameters. This underscores the need for larger datasets and extended training to improve results. Overall, **GloVe (Gensim)** is well-suited for practical applications, while future efforts could focus on fine-tuning pretrained models or optimizing the training process for models built from scratch.
+
+---
+
+## Installation Steps
+
+To run the app:
+
+1. Load the files from this repository.
+2. Run the application:
+   ```bash
+   python app.py
+   Access the app in your browser at:
+http://localhost:8501/
 ---
